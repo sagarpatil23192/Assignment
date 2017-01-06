@@ -1,0 +1,25 @@
+PFB the steps to run the images:
+
+
+1. Copy the git project on any linux VM. Go to the assignment directory. 
+
+2. Steps to install docker-compose:
+
+	1. pip install docker-compose
+
+
+	2. If you get the error :Error: ERROR: client and server don't have same version (client : 1.21, server: 1.18)
+
+	Solution :Run the command below
+		  export COMPOSE_API_VERSION=1.18
+
+3. Use the  following command to start the conatiners:
+
+ docker-compose up --build
+
+4. Check the conatiner using command : docker ps
+
+5. Hit the nginx conatiner using IE or using the following command on the same host:
+
+	curl -i localhost:80
+
